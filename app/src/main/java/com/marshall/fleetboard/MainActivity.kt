@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     // Your published Fleet Board artifact link.
     // To update: change this, bump versionCode/versionName in app/build.gradle,
     // push a new tag, and GitHub Actions builds + releases the updated APK.
-    private val appUrl = "https://claude.ai/public/artifacts/00b8635b-06ee-49d3-bed4-ded82c3d6790"
+    private val appUrl = "https://claude.ai/public/artifacts/aceb0bb3-75ee-4e5e-ac59-aca5583a60cf"
 
     private lateinit var webView: WebView
     private lateinit var swipeRefresh: SwipeRefreshLayout

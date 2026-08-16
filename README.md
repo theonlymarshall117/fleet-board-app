@@ -1,7 +1,7 @@
 # Fleet Board (Android)
 
 A thin Android wrapper around your published Fleet Board artifact:
-`https://claude.ai/public/artifacts/00b8635b-06ee-49d3-bed4-ded82c3d6790`
+`https://claude.ai/public/artifacts/aceb0bb3-75ee-4e5e-ac59-aca5583a60cf`
 
 It's just a full-screen WebView pointed at that link — same data, same
 storage, same everything as opening it in a browser. No app-store account
