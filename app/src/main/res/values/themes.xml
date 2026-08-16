@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.FleetBoard" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#1B1D1F</item>
+        <item name="android:windowBackground">#1B1D1F</item>
+        <item name="colorPrimary">#E8A33D</item>
+        <item name="colorPrimaryDark">#1B1D1F</item>
+    </style>
+</resources>
