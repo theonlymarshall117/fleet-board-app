@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     // Your published Fleet Board artifact link.
     // To update: change this, bump versionCode/versionName in app/build.gradle,
     // push a new tag, and GitHub Actions builds + releases the updated APK.
-    private val appUrl = "https://claude.ai/public/artifacts/aceb0bb3-75ee-4e5e-ac59-aca5583a60cf"
+    private val appUrl = "https://claude.ai/public/artifacts/2a86bb08-c30b-494d-83a3-f8741b04895f"
 
     private lateinit var webView: WebView
     private lateinit var swipeRefresh: SwipeRefreshLayout
@@ -44,6 +44,12 @@ class MainActivity : AppCompatActivity() {
 
         swipeRefresh.setOnRefreshListener {
             webView.reload()
+        }
+
+        // Only allow pull-to-refresh when the page is scrolled all the way to the top —
+        // otherwise any upward scroll gesture inside the page can falsely trigger a reload.
+        webView.setOnScrollChangeListener { _, _, scrollY, _, _ ->
+            swipeRefresh.isEnabled = scrollY == 0
         }
 
         webView.loadUrl(appUrl)

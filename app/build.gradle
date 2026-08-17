@@ -12,8 +12,8 @@ android {
         minSdk 24
         targetSdk 34
         // Bump versionCode + versionName each time you tag a new release.
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 4
+        versionName "1.0.3"
     }
 
     buildTypes {
